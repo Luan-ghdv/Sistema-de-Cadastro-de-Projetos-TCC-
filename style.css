@@ -3,13 +3,12 @@
     --cor-branco: #FFF;
     --background: #f4f7f6;
     --titulo: #2d3436;
-    --fonte-principal: 'Noto Sans', sans-serif;
 }
 
 * {
     margin: 0;
     padding: 0;
-    font-family: var(--fonte-principal) !important;
+    font-family: sans-serif;
 }
 
 body {
@@ -17,7 +16,6 @@ body {
 }
 
 header, main, div {
-
     margin: 12px;
     padding: 4px;
     border-radius: 6px;
@@ -55,6 +53,7 @@ header, main, div {
 
 .lk {
     text-decoration: none;
+    text-align: center;
 }
 
 .lk:hover > h2 {
@@ -69,4 +68,16 @@ header, main, div {
 
 .detalhe {
     font-size: 0.9rem;
+    text-align: center;
+}
+
+.img-box-menu {
+    border: 2px solid var(--cor-principal);
+    width: 80px;
+    height: auto;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 1rem;
+    border-radius: 50%;
 }
