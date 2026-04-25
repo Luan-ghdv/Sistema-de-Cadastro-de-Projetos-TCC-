@@ -69,15 +69,17 @@ header, main, div {
 .detalhe {
     font-size: 0.9rem;
     text-align: center;
+    margin-top: 0.8rem;
 }
 
 .img-box-menu {
-    border: 2px solid var(--cor-principal);
-    width: 80px;
+    border: 3px solid var(--cor-principal);
+    width: 100px;
     height: auto;
     display: block;
     margin-right: auto;
     margin-left: auto;
+    padding: 0.1rem;
     margin-bottom: 1rem;
     border-radius: 50%;
 }
