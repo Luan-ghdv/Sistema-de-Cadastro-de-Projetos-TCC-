@@ -83,3 +83,16 @@ header, main, div {
     margin-bottom: 1rem;
     border-radius: 50%;
 }
+
+#form1 {
+    background-color: var(--cor-branco);
+    margin-right: 1.55rem;
+    margin-left: 1.55rem;
+    border-radius: 6px;
+    box-shadow: 0px 0px 3px black;
+}
+
+.caixa {
+    padding: 0.2em;
+    font-size: 1.1em;
+}
