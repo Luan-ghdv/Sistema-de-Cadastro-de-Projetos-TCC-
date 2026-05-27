@@ -1,3 +1,19 @@
+/* Importando a Roboto Regular */
+@font-face {
+    font-family: 'Roboto';
+    src: url('midia/fontes/Roboto-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Importando a Roboto Bold */
+@font-face {
+    font-family: 'Roboto';
+    src: url('midia/fontes/Roboto-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
 :root {
     --cor-principal: #630d0d;
     --cor-branco: #FFF;
@@ -8,7 +24,8 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
 }
 
 body {
