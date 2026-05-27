@@ -59,7 +59,8 @@
         </div>
 
         <div>
-            <label for="">Justificativa</label>
+            <label for="">Justificativa</label><br>
+            <input type="text" class="caixa">
         </div>
 
         <div>
@@ -71,27 +72,41 @@
         </div>
 
         <div>
-            <label for="">Prioridade</label>
+            <label for="">Prioridade</label><br>
+            <select id="prioridade" name="prioridade" autocomplete="off" required>
+                <option value="" disabled selected hidden>Selecione</option>
+                <option value="P0">P0</option>
+                <option value="P1">P1</option>
+                <option value="P2">P2</option>
+                <option value="P3">P3</option>
+                <option value="P4">P4</option>
+            </select>
         </div>
 
         <div>
-            <label for="">Status</label>
+            <label for="">Status</label><br>
+            <select name="" id="">
+                <option value="" disabled selected hidden>Selecione</option>
+                <option value="em-andamento">Em Andamento</option>
+                <option value="concluido">Concluído</option>
+                <option value="cancelado">Cancelado</option>
+                <option value="paralizado">Paralizado</option>
+            </select>
         </div>
 
         <div>
-            <label for="">Avanço da Atividade</label>
+            <label for="">Data Inicial</label><br>
+            <input type="date" id="data-inicial" name="data-inicial" autocomplete="off" required>
         </div>
 
         <div>
-            <label for="">Data Inicial</label>
+            <label for="">Prazo Estimado</label><br>
+            <input type="date" id="data-inicial" name="data-inicial" autocomplete="off" required>
         </div>
 
         <div>
-            <label for="">Prazo Estimado</label>
-        </div>
-
-        <div>
-            <label for="">Anexos</label>
+            <label for="">Anexos</label><br>
+            <input type="file">
         </div>
     </form>
 </body>
