@@ -46,12 +46,14 @@
             <label for="">Modalidade</label><br>
             <select id="modalidade" name="modalidade" autocomplete="off" required>
                 <option value="" disabled selected hidden>Selecione</option>
+                <option value="Análise de Circuito de Motores">Análise de Circuito de Motores</option>
                 <option value="Análise de Vibrações">Análise de Vibrações</option>
                 <option value="Elétrica">Elétrica</option>
                 <option value="Hidráulica e Pneumática">Hidráulica e Pneumática</option>
                 <option value="Mecânica">Mecânica</option>
                 <option value="Materias">Materias</option>
                 <option value="Sistemas">Sistemas</option>
+                <option value="Termografia">Termografia</option>
             </select>
         </div>
 
@@ -60,6 +62,11 @@
              <select id="tipo-de-atendimento" name="tipo-de-atendimento" autocomplete="off" required>
                 <option value="" disabled selected hidden>Selecione</option>
                 <option value="analise-tecnica">Análise Técnica</option>
+                <option value="emergencial">Atendimento Emergencial (Corretiva)</option>
+                <option value="programado">Manutenção Programada (Rotina)</option>
+                <option value="suporte-operacional">Suporte / Apoio Operacional</option>
+                <option value="calibracao-afericao">Calibração / Aferição de Instrumentos</option>
+                <option value="fiscalizacao-inspecao">Fiscalização / Inspeção de Segurança</option>
             </select>
         </div>
 
@@ -85,9 +92,14 @@
 
         <div>
             <label for="">Enfoque</label><br>
-             <select id="enfoque" name="enfoque" autocomplete="off" required>
+            <select id="enfoque" name="enfoque" autocomplete="off" required>
                 <option value="" disabled selected hidden>Selecione</option>
-                <option value="Melhoria">Melhoria</option>
+                <option value="Melhoria">Melhoria / Modificação de Projeto</option>
+                <option value="Confiabilidade">Confiabilidade (Aumento de MTBF)</option>
+                <option value="Mantenabilidade">Mantenabilidade (Redução de MTTR)</option>
+                <option value="Custos">Otimização de Custos</option>
+                <option value="SSMA">Segurança, Saúde e Meio Ambiente (SSMA)</option>
+                <option value="Performance">Performance / Eliminação de Gargalo</option>
             </select>
         </div>
 
@@ -128,6 +140,8 @@
             <label for="">Anexos</label><br>
             <input type="file">
         </div>
+
+        
     </form>
 </body>
 </html>
