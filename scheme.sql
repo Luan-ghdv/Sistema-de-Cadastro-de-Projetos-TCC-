@@ -1,5 +1,21 @@
 CREATE TABLE IF NOT EXISTS ordens_manutencao (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
+    lider_executante TEXT NOT NULL,
+    titulo TEXT NOT NULL,
+    coordenacao TEXT NOT NULL,
+    gerencia_geral TEXT NOT NULL,
+    gerencia TEXT NOT NULL,
+    modalidade TEXT NOT NULL,
+    tipo_atendimento TEXT NOT NULL,
+    origem_demanda TEXT NOT NULL,
+    solicitante_responsavel TEXT NOT NULL,
+    justicativa TEXT NOT NULL,
+    pessoas_adicionais TEXT,
+    enfoque TEXT NOT NULL,
     prioridade TEXT NOT NULL,
-    data_limite 
+    status TEXT NOT NULL,
+    data_inicial TEXT NOT NULL,
+    prazo_estimado TEXT NOT NULL,
+    anexo_path TEXT,
+    data_registro TEXT DEFAULT (datetime('now', 'localtime'))
 )
