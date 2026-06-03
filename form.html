@@ -11,39 +11,41 @@
         <h1 class="titulo-topo">Registre o Projeto</h1>
     </header>
 
-    <form action="" id="form1">
+    <form action="/salvar-projeto" method="POST" id="form1" enctype="multipart/form-data">
         <div>
-            <label for="">Líder Executante</label><br>
-            <input type="text" class="caixa">
+            <label for="lider_executante">Líder Executante</label><br>
+            <input type="text" id="lider_executante" name="lider_executante" class="caixa" required>
         </div>
 
         <div>
-            <label for="">Título</label><br>
-            <input type="text" class="caixa">
+            <label for="titulo">Título</label><br>
+            <input type="text" id="titulo" name="titulo" class="caixa" required>
         </div>
 
         <div>
             <label>Coordenação</label><br>
-            <input type="checkbox" value="equipamentos">
-            <label for="">Equipamentos</label>
-            <input type="checkbox" value="preditiva">
-            <label for="">Preditiva</label>
-            <input type="checkbox" value="sistemas">
-            <label for="">Sistemas</label>
+            <input type="checkbox" id="coord_equipamentos" name="coordenacao[]" value="equipamentos">
+            <label for="coord_equipamentos">Equipamentos</label>
+            
+            <input type="checkbox" id="coord_preditiva" name="coordenacao[]" value="preditiva">
+            <label for="coord_preditiva">Preditiva</label>
+            
+            <input type="checkbox" id="coord_sistemas" name="coordenacao[]" value="sistemas">
+            <label for="coord_sistemas">Sistemas</label>
         </div>
 
         <div>
-            <label for="">Gerência Geral (GG)</label><br>
-            <input type="text" class="caixa">
+            <label for="gerencia_geral">Gerência Geral (GG)</label><br>
+            <input type="text" id="gerencia_geral" name="gerencia_geral" class="caixa">
         </div>
 
         <div>
-            <label for="">Gerência (G)</label><br>
-            <input type="text" class="caixa">
+            <label for="gerencia">Gerência (G)</label><br>
+            <input type="text" id="gerencia" name="gerencia" class="caixa">
         </div>
 
         <div>
-            <label for="">Modalidade</label><br>
+            <label for="modalidade">Modalidade</label><br>
             <select id="modalidade" name="modalidade" autocomplete="off" required>
                 <option value="" disabled selected hidden>Selecione</option>
                 <option value="Análise de Circuito de Motores">Análise de Circuito de Motores</option>
@@ -58,8 +60,8 @@
         </div>
 
         <div>
-            <label for="">Tipo de Atendimento</label><br>
-             <select id="tipo-de-atendimento" name="tipo-de-atendimento" autocomplete="off" required>
+            <label for="tipo-de-atendimento">Tipo de Atendimento</label><br>
+             <select id="tipo-de-atendimento" name="tipo_atendimento" autocomplete="off" required>
                 <option value="" disabled selected hidden>Selecione</option>
                 <option value="analise-tecnica">Análise Técnica</option>
                 <option value="emergencial">Atendimento Emergencial (Corretiva)</option>
@@ -71,27 +73,27 @@
         </div>
 
         <div>
-            <label for=""> Origem da Demanda</label><br>
-            <input type="text" class="caixa">
+            <label for="origem_demanda">Origem da Demanda</label><br>
+            <input type="text" id="origem_demanda" name="origem_demanda" class="caixa">
         </div>
 
         <div>
-            <label for=""> Solicitante Responsável</label><br>
-            <input type="text" class="caixa">
+            <label for="solicitante_responsavel">Solicitante Responsável</label><br>
+            <input type="text" id="solicitante_responsavel" name="solicitante_responsavel" class="caixa">
         </div>
 
         <div>
-            <label for="">Justificativa</label><br>
-            <input type="text" class="caixa">
+            <label for="justificativa">Justificativa</label><br>
+            <input type="text" id="justificativa" name="justificativa" class="caixa">
         </div>
 
         <div>
-            <label for="">Pessoas adicionais</label><br>
-            <input type="text" class="caixa">
+            <label for="pessoas_adicionais">Pessoas adicionais</label><br>
+            <input type="text" id="pessoas_adicionais" name="pessoas_adicionais" class="caixa">
         </div>
 
         <div>
-            <label for="">Enfoque</label><br>
+            <label for="enfoque">Enfoque</label><br>
             <select id="enfoque" name="enfoque" autocomplete="off" required>
                 <option value="" disabled selected hidden>Selecione</option>
                 <option value="Melhoria">Melhoria / Modificação de Projeto</option>
@@ -104,7 +106,7 @@
         </div>
 
         <div>
-            <label for="">Prioridade</label><br>
+            <label for="prioridade">Prioridade</label><br>
             <select id="prioridade" name="prioridade" autocomplete="off" required>
                 <option value="" disabled selected hidden>Selecione</option>
                 <option value="P0">P0</option>
@@ -116,8 +118,8 @@
         </div>
 
         <div>
-            <label for="">Status</label><br>
-            <select name="" id="">
+            <label for="status">Status</label><br>
+            <select name="status" id="status" required>
                 <option value="" disabled selected hidden>Selecione</option>
                 <option value="em-andamento">Em Andamento</option>
                 <option value="concluido">Concluído</option>
@@ -127,21 +129,23 @@
         </div>
 
         <div>
-            <label for="">Data Inicial</label><br>
-            <input type="date" id="data-inicial" name="data-inicial" autocomplete="off" required>
+            <label for="data-inicial">Data Inicial</label><br>
+            <input type="date" id="data-inicial" name="data_inicial" autocomplete="off" required>
         </div>
 
         <div>
-            <label for="">Prazo Estimado</label><br>
-            <input type="date" id="data-inicial" name="data-inicial" autocomplete="off" required>
+            <label for="prazo-estimado">Prazo Estimado</label><br>
+            <input type="date" id="prazo-estimado" name="prazo_estimado" autocomplete="off" required>
         </div>
 
         <div>
-            <label for="">Anexos</label><br>
-            <input type="file">
+            <label for="anexo">Anexos</label><br>
+            <input type="file" id="anexo" name="anexo">
         </div>
 
-        
+        <div class="form-actions">
+            <button type="submit" class="btn">Salvar Projeto</button>
+        </div>
     </form>
 </body>
 </html>
