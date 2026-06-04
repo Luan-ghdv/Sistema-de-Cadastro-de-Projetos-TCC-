@@ -18,6 +18,11 @@ def pagina_inicial():
     # Importante: O seu arquivo HTML deve estar dentro da pasta 'templates'
     return render_template('index.html')
 
+@app.route('/formulario')
+def mostrar_formulario():
+    """Esta rota entrega a página do formulário"""
+    return render_template('form.html')
+
 @app.route('/salvar-projeto', methods=['POST'])
 def salvar_projeto():
     """Esta rota recebe os dados enviados pelo formulário e salva no banco"""
