@@ -12,21 +12,60 @@
         <a href="/" style="color: white; text-decoration: none; font-weight: bold; float: right; margin-top: -30px;">[ Voltar ao Menu ]</a>
     </header>
 
-    <form action="">
+    <form action="/salvar-subprojeto" method="POST" id="form2">
+        
         <div>
-            <label for="">Projeto Original</label><br>
-
+            <label for="projeto_original">Projeto Original</label><br>
+            <input list="lista_projetos" id="projeto_original" name="projeto_original_busca" class="caixa" autocomplete="off" required placeholder="Digite para buscar...">
+            
+            <datalist id="lista_projetos">
+                <option value="1 - Estrutura Metálica">
+                <option value="2 - Atualização de Servidores">
+                <option value="3 - Análise de Circuito de Motores">
+                <option value="4 - Adequação Hidráulica">
+            </datalist>
         </div>
 
         <div>
-            <label for="titulo">Título do Sub-Projeto</label><br>
-            <input type="text" id="sub-titulo" name="sub-titulo" class="caixa" required>
+            <label for="sub_titulo">Título do Sub-Projeto</label><br>
+            <input type="text" id="sub_titulo" name="sub_titulo" class="caixa" required>
         </div>
 
         <div>
-            <label for=""></label>
+            <label for="responsavel">Responsável pela Execução</label><br>
+            <input type="text" id="responsavel" name="responsavel" class="caixa" required>
         </div>
-    
+
+        <div>
+            <label for="status">Status</label><br>
+            <select name="status" id="status" required>
+                <option value="" disabled selected hidden>Selecione</option>
+                <option value="em-andamento">Em Andamento</option>
+                <option value="concluido">Concluído</option>
+                <option value="cancelado">Cancelado</option>
+                <option value="nao-iniciado">Não Iniciado</option>
+                <option value="paralizado">Paralisado</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="data_inicial">Data Inicial</label><br>
+            <input type="date" id="data_inicial" name="data_inicial" autocomplete="off" required>
+        </div>
+
+        <div>
+            <label for="prazo_estimado">Prazo Estimado</label><br>
+            <input type="date" id="prazo_estimado" name="prazo_estimado" autocomplete="off" required>
+        </div>
+
+        <div>
+            <label for="justificativa">Justificativa</label><br>
+            <input type="text" id="justificativa" name="justificativa" class="caixa">
+        </div>
+
+        <div class="form-actions">
+            <button type="submit" class="btn">Salvar Sub-Projeto</button>
+        </div>
     </form>
 </body>
 </html>
